@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Massa Falida Xinguleder</title>
+<meta name="description" content="Informações oficiais do processo de falência da Xinguleder Couros Ltda. (Processo nº 3015102-95.2006.8.13.0702), mantidas pelo Administrador Judicial nos termos do art. 22, I, k, da Lei 11.101/2005.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f6f2; --surface:#ffffff; --ink:#1d2329; --muted:#5b646d; --line:#e2e0d8;
+    --brand:#173b57; --brand-ink:#ffffff; --accent:#a8792b; --pend:#fff4d6; --pend-ink:#7a5a12;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+      --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --pend:#3a3220; --pend-ink:#f0d79a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+    --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --pend:#3a3220; --pend-ink:#f0d79a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+  a{color:var(--brand)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) a{color:#8fc1e3} }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.25;margin:0 0 .5em}
+  .pend{background:var(--pend);color:var(--pend-ink);padding:1px 6px;border-radius:4px;font-size:.92em;white-space:nowrap}
+
+  header.top{background:var(--brand);color:var(--brand-ink)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+  .mark{font-family:"Source Serif 4",serif;font-weight:700;font-size:1.15rem;letter-spacing:.2px}
+  .mark small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:.78rem;opacity:.85}
+  nav a{color:var(--brand-ink);text-decoration:none;margin-left:18px;font-size:.92rem;opacity:.9}
+  nav a:hover{opacity:1;text-decoration:underline}
+
+  .hero{padding:56px 0 40px;border-bottom:1px solid var(--line)}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:1.2px;text-transform:uppercase}
+  .hero h1{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-top:8px}
+  .hero p{max-width:680px;color:var(--muted);font-size:1.05rem}
+  .status{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.88rem}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:1.6rem}
+  .lead{color:var(--muted);max-width:720px;margin-top:-4px}
+
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:20px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .card dt{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+  .card dd{margin:4px 0 0;font-weight:500}
+  .card h3{font-size:1.15rem}
+  .card p{margin:.3em 0;color:var(--muted)}
+
+  .notice{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:16px 18px;margin-top:14px}
+  .notice time{font-size:.85rem;color:var(--muted);white-space:nowrap;min-width:92px}
+  .empty{color:var(--muted);font-style:italic;margin-top:14px}
+
+  .steps{counter-reset:s;list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+  .steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px 16px 60px;position:relative}
+  .steps li::before{content:counter(s);position:absolute;left:18px;top:15px;width:28px;height:28px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-weight:600;font-size:.9rem}
+
+  .docs{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.95rem}
+  .docs th,.docs td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+  .docs th{font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
+  .docs tr:last-child td{border-bottom:0}
+  .tablewrap{overflow-x:auto}
+
+  footer{padding:32px 0 48px;color:var(--muted);font-size:.88rem}
+  footer p{margin:.3em 0}
+
+  @media (max-width:640px){
+    nav{width:100%} nav a{margin:0 14px 0 0}
+    .notice{flex-direction:column;gap:4px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="mark">Massa Falida Xinguleder
+      <small>Administração Judicial · Lei 11.101/2005</small>
+    </div>
+    <nav>
+      <a href="#processo">Processo</a>
+      <a href="#avisos">Avisos</a>
+      <a href="#credores">Credores</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Página oficial do Administrador Judicial</div>
+      <h1>Massa Falida de Xinguleder Couros Ltda.</h1>
+      <p style="margin-top:-6px;font-size:.95rem">Nova denominação de Braspelco · Processo nº 3015102-95.2006.8.13.0702 · 6ª Vara Cível da Comarca de Uberlândia/MG</p>
+      <p>Este é o canal oficial de informações do processo de falência, mantido pelo Administrador Judicial em cumprimento ao art. 22, I, "k", da Lei 11.101/2005. Aqui credores e interessados encontram editais, prazos, relatórios e as peças principais do processo.</p>
+      <div class="status"><span class="dot"></span> Situação atual: consolidação do Quadro-Geral de Credores</div>
+    </div>
+  </div>
+
+  <section id="processo">
+    <div class="wrap">
+      <h2>Dados do processo</h2>
+      <p class="lead">Informações de identificação da falida e do juízo responsável.</p>
+      <div class="grid">
+        <dl class="card"><dt>Falida</dt><dd>Xinguleder Couros Ltda.<br><span style="font-weight:400;color:var(--muted);font-size:.9rem">nova denominação de Braspelco</span></dd><dt style="margin-top:10px">CNPJ</dt><dd><span class="pend">[00.000.000/0000-00]</span></dd></dl>
+        <dl class="card"><dt>Processo nº</dt><dd>3015102-95.2006.8.13.0702</dd><dt style="margin-top:10px">Juízo</dt><dd>6ª Vara Cível da Comarca de Uberlândia/MG</dd></dl>
+        <dl class="card"><dt>Decretação da falência</dt><dd>02/12/2013</dd><dt style="margin-top:10px">Termo legal</dt><dd><span class="pend">[dd/mm/aaaa]</span></dd></dl>
+        <dl class="card"><dt>Administrador Judicial</dt><dd>Rondinélio Ferreira Rodrigues</dd><dt style="margin-top:10px">Registro</dt><dd>CRC-MG 090.142/O-0 · OAB/MG 189.397</dd></dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="avisos">
+    <div class="wrap">
+      <h2>Avisos e editais</h2>
+      <p class="lead">Publicações mais recentes, da mais nova para a mais antiga.</p>
+      <div class="notice">
+        <time><span class="pend">[data]</span></time>
+        <div><strong>Lançamento do site oficial da Massa Falida</strong><br>
+        Este endereço passa a concentrar as informações do processo. Novos editais e relatórios serão publicados nesta seção.</div>
+      </div>
+      <p class="empty">Os editais do processo serão incluídos aqui assim que publicados.</p>
+    </div>
+  </section>
+
+  <section id="credores">
+    <div class="wrap">
+      <h2>Orientações aos credores</h2>
+      <p class="lead">O Quadro-Geral de Credores está em consolidação, a partir da relação apresentada pela falida e das manifestações e decisões já proferidas. Os créditos têm como data-base 02/12/2013, data da decretação da falência (art. 9º, II, da Lei 11.101/2005).</p>
+      <ol class="steps">
+        <li><strong>Confira a relação de credores.</strong> Quando o Quadro-Geral consolidado for apresentado nos autos, ele será disponibilizado nesta página. Verifique se seu crédito consta e se o valor e a classificação estão corretos.</li>
+        <li><strong>Créditos ainda não habilitados.</strong> Podem ser apresentados como habilitação retardatária (art. 10 da Lei 11.101/2005), por petição nos autos ou, conforme o caso, por manifestação administrativa ao Administrador Judicial.</li>
+        <li><strong>Reúna os documentos.</strong> Informe nome, CPF/CNPJ, endereço, valor do crédito na data da decretação (02/12/2013), origem e classificação, e anexe os documentos comprobatórios (art. 9º).</li>
+        <li><strong>Envie pelo canal oficial.</strong> Encaminhe para <a href="mailto:rondinelio@romaconsultores.com.br">rondinelio@romaconsultores.com.br</a>, indicando no assunto "Massa Falida Xinguleder". Você receberá confirmação de recebimento.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="documentos">
+    <div class="wrap">
+      <h2>Peças principais e documentos</h2>
+      <p class="lead">Documentos do processo disponibilizados para consulta.</p>
+      <div class="tablewrap">
+        <table class="docs">
+          <thead><tr><th>Documento</th><th>Data</th><th>Arquivo</th></tr></thead>
+          <tbody>
+            <tr><td>Sentença de decretação da falência</td><td>02/12/2013</td><td><span class="pend">[PDF]</span></td></tr>
+            <tr><td>Edital do art. 99, parágrafo único</td><td><span class="pend">[data]</span></td><td><span class="pend">[PDF]</span></td></tr>
+            <tr><td>Quadro-Geral de Credores consolidado</td><td>—</td><td>Em elaboração</td></tr>
+            <tr><td>Relatórios mensais de atividades</td><td><span class="pend">[data]</span></td><td><span class="pend">[PDF]</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" style="border-bottom:0">
+    <div class="wrap">
+      <h2>Contato com o Administrador Judicial</h2>
+      <div class="grid">
+        <div class="card"><h3>Atendimento a credores</h3><p>Rondinélio Ferreira Rodrigues · Administrador Judicial</p><p>E-mail: <a href="mailto:rondinelio@romaconsultores.com.br">rondinelio@romaconsultores.com.br</a></p><p>Telefones: <a href="tel:+5534991328308">(34) 99132-8308</a> · <a href="tel:+5534991127124">(34) 99112-7124</a> · <a href="tel:+553432127092">(34) 3212-7092</a></p></div>
+        <div class="card"><h3>Endereço</h3><p>Rua Lapa do Lobo, nº 350 – Bairro Granja Marileusa<br>Uberlândia/MG – CEP 38406-644</p><p>Horário: <span class="pend">[dias e horários]</span></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Página mantida pelo Administrador Judicial nos termos do art. 22, I, "k", da Lei 11.101/2005.</p>
+    <p>As informações aqui publicadas não substituem os autos. Em caso de divergência, prevalece o conteúdo do processo judicial.</p>
+  </div>
+</footer>
+
+</body>
+</html>
