@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manifestação recebida · Massa Falida Xinguleder</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f6f2;--surface:#fff;--ink:#1d2329;--muted:#5b646d;--line:#e2e0d8;--brand:#173b57;--brand-ink:#fff;--ok:#1d7a46}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12161a;--surface:#1a2026;--ink:#e8e6e1;--muted:#a2abb3;--line:#2c343c;--brand:#22506f;--ok:#47cd89}}
+  :root[data-theme="dark"]{--bg:#12161a;--surface:#1a2026;--ink:#e8e6e1;--muted:#a2abb3;--line:#2c343c;--brand:#22506f;--ok:#47cd89}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+  header{background:var(--brand);color:var(--brand-ink)}
+  .wrap{max-width:720px;margin:0 auto;padding:0 16px}
+  header .wrap{padding-top:14px;padding-bottom:14px}
+  header a{color:var(--brand-ink);text-decoration:none;font-family:"Source Serif 4",serif;font-weight:700;font-size:1.15rem}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;margin:40px 0}
+  h1{font-family:"Source Serif 4",serif;font-size:1.8rem;margin:0 0 12px}
+  .ok{color:var(--ok);font-weight:600;letter-spacing:.5px;text-transform:uppercase;font-size:.85rem}
+  .proto{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.3rem;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 14px;display:inline-block;margin:6px 0 14px}
+  p{color:var(--muted)}
+  a.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;border-radius:8px;padding:10px 18px;margin-top:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="./">Massa Falida Xinguleder</a></div></header>
+<main class="wrap">
+  <div class="card">
+    <div class="ok">✓ Manifestação enviada</div>
+    <h1>Recebemos a sua manifestação</h1>
+    <div id="pbox" hidden>
+      <p style="margin-bottom:0">Número de protocolo:</p>
+      <div class="proto" id="proto"></div>
+    </div>
+    <p>Guarde este número para eventual contato. Uma confirmação também foi enviada para o e-mail informado no formulário. A manifestação será analisada pela Administração Judicial.</p>
+    <p>Se não receber a confirmação em alguns minutos, verifique a caixa de spam ou escreva para <a href="mailto:manifestacoes@falenciaxinguleder.com.br">manifestacoes@falenciaxinguleder.com.br</a> informando o protocolo.</p>
+    <a class="btn" href="./">Voltar à página inicial</a>
+  </div>
+</main>
+<script>
+  try{var p=new URLSearchParams(location.search).get('p');if(p&&/^[A-Z0-9-]{8,40}$/.test(p)){document.getElementById('proto').textContent=p;document.getElementById('pbox').hidden=false}}catch(e){}
+</script>
+</body>
+</html>

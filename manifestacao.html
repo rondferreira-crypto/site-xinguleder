@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manifestação de Credor · Massa Falida Xinguleder</title>
+<meta name="description" content="Formulário para o credor apresentar manifestação sobre o seu crédito ao Administrador Judicial da Massa Falida de Xinguleder Couros Ltda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f6f2; --surface:#ffffff; --ink:#1d2329; --muted:#5b646d; --line:#e2e0d8;
+    --brand:#173b57; --brand-ink:#ffffff; --accent:#a8792b; --err:#b42318; --ok:#1d7a46;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+      --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --err:#f97066; --ok:#47cd89;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+    --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --err:#f97066; --ok:#47cd89;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+  a{color:var(--brand)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) a{color:#8fc1e3} }
+  .wrap{max-width:820px;margin:0 auto;padding:0 16px}
+  h1,h2{font-family:"Source Serif 4",Georgia,serif;line-height:1.25;margin:0 0 .5em}
+  header.top{background:var(--brand);color:var(--brand-ink)}
+  header.top .wrap{max-width:1080px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+  .mark{font-family:"Source Serif 4",serif;font-weight:700;font-size:1.15rem;color:var(--brand-ink);text-decoration:none}
+  .mark small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:.78rem;opacity:.85}
+  nav a{color:var(--brand-ink);text-decoration:none;font-size:.92rem;opacity:.9}
+  nav a:hover{opacity:1;text-decoration:underline}
+
+  .hero{padding:40px 0 24px}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:1.2px;text-transform:uppercase}
+  .hero h1{font-size:clamp(1.7rem,4vw,2.4rem);margin-top:8px}
+  .hero p{color:var(--muted)}
+
+  form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}
+  fieldset{border:0;padding:0;margin:0 0 24px}
+  legend{font-family:"Source Serif 4",serif;font-size:1.25rem;font-weight:600;margin-bottom:12px;padding:0}
+  .row{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+  @media (max-width:640px){ .row{grid-template-columns:1fr} form{padding:18px} }
+  label{display:block;font-weight:500;font-size:.95rem;margin-bottom:6px}
+  .req{color:var(--err)}
+  .hint{font-size:.85rem;color:var(--muted);margin-top:4px}
+  .field{margin-bottom:16px}
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+  textarea{min-height:180px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+  input[type=file]{font:inherit;font-size:.92rem;width:100%}
+  .files{display:grid;gap:10px}
+  .filebox{border:1px dashed var(--line);border-radius:8px;padding:10px 12px;background:var(--bg)}
+  #filestatus{font-size:.88rem;margin-top:8px;color:var(--muted)}
+  #filestatus.bad{color:var(--err);font-weight:500}
+  .check{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:.93rem}
+  .check input{margin-top:5px;flex:none;width:18px;height:18px}
+  .privacy{font-size:.88rem;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:14px}
+  button{font:inherit;font-weight:600;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:12px 22px;cursor:pointer}
+  button[disabled]{opacity:.6;cursor:wait}
+  .notice{border-left:4px solid var(--accent);background:var(--surface);border-radius:8px;padding:14px 16px;margin-bottom:20px;border:1px solid var(--line);border-left-width:4px;font-size:.95rem}
+  footer{padding:24px 0 40px;color:var(--muted);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="./">Massa Falida Xinguleder
+      <small>Administração Judicial · Lei 11.101/2005</small>
+    </a>
+    <nav><a href="./">← Voltar à página inicial</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Canal oficial do Administrador Judicial</div>
+    <h1>Manifestação de credor</h1>
+    <p>Use este formulário para apresentar ao Administrador Judicial manifestação sobre o seu crédito na falência de Xinguleder Couros Ltda. (Processo nº 3015102-95.2006.8.13.0702), anexando os documentos que a fundamentam.</p>
+  </div>
+
+  <div class="notice">
+    <strong>Antes de enviar:</strong> os créditos são considerados na data da decretação da falência, <strong>02/12/2013</strong> (art. 9º, II, da Lei 11.101/2005). A manifestação administrativa não substitui as petições que devam ser apresentadas nos autos, quando exigidas pela lei ou pelo Juízo.
+  </div>
+
+  <form id="form" action="https://formsubmit.co/manifestacoes@falenciaxinguleder.com.br" method="POST" enctype="multipart/form-data" novalidate>
+    <!-- Configuração do serviço de envio -->
+    <input type="hidden" name="_subject" id="f_subject" value="Manifestação de credor - Massa Falida Xinguleder">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" id="f_next" value="https://falenciaxinguleder.com.br/manifestacao-enviada.html">
+    <input type="hidden" name="_autoresponse" id="f_auto" value="">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <input type="hidden" name="Protocolo" id="f_protocolo" value="">
+    <input type="hidden" name="Data e hora do envio" id="f_datahora" value="">
+
+    <fieldset>
+      <legend>1. Identificação do credor</legend>
+      <div class="field">
+        <label for="nome">Nome completo ou razão social <span class="req">*</span></label>
+        <input type="text" id="nome" name="Credor" required>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="doc">CPF ou CNPJ <span class="req">*</span></label>
+          <input type="text" id="doc" name="CPF/CNPJ" inputmode="numeric" required>
+        </div>
+        <div class="field">
+          <label for="tel">Telefone</label>
+          <input type="tel" id="tel" name="Telefone">
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">E-mail para contato <span class="req">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <div class="hint">Você receberá neste e-mail a confirmação com o número de protocolo.</div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="representante">Advogado ou representante (se houver)</label>
+          <input type="text" id="representante" name="Representante">
+        </div>
+        <div class="field">
+          <label for="oab">OAB do representante</label>
+          <input type="text" id="oab" name="OAB">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Sobre o crédito</legend>
+      <div class="field">
+        <label for="tipo">Tipo de manifestação <span class="req">*</span></label>
+        <select id="tipo" name="Tipo de manifestação" required>
+          <option value="">Selecione…</option>
+          <option>Divergência quanto ao valor do crédito</option>
+          <option>Divergência quanto à classificação do crédito</option>
+          <option>Crédito não relacionado (pedido de inclusão)</option>
+          <option>Concordância com o valor e a classificação</option>
+          <option>Cessão ou transferência do crédito</option>
+          <option>Atualização de dados cadastrais ou bancários</option>
+          <option>Outros</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="classe">Classe que o credor entende aplicável</label>
+          <select id="classe" name="Classe indicada pelo credor">
+            <option value="">Não sei / não se aplica</option>
+            <option>I – Trabalhista ou equiparado</option>
+            <option>II – Garantia real</option>
+            <option>III – Tributário</option>
+            <option>VI – Quirografário</option>
+            <option>VII – Multas e penas pecuniárias</option>
+            <option>VIII – Subordinado</option>
+            <option>Restituição (art. 85 e seguintes)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="valor">Valor que entende devido em 02/12/2013 (R$)</label>
+          <input type="text" id="valor" name="Valor indicado pelo credor (R$)" inputmode="decimal" placeholder="Ex.: 12.345,67">
+        </div>
+      </div>
+      <div class="field">
+        <label for="processo">Processo de origem do crédito (se houver)</label>
+        <input type="text" id="processo" name="Processo de origem" placeholder="Ex.: reclamação trabalhista, execução, habilitação">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Manifestação</legend>
+      <div class="field">
+        <label for="texto">Exponha a sua manifestação <span class="req">*</span></label>
+        <textarea id="texto" name="Manifestação" required placeholder="Explique o que pede e por quê, indicando a origem do crédito e os documentos anexados."></textarea>
+      </div>
+      <div class="field">
+        <label>Documentos anexos</label>
+        <div class="files">
+          <div class="filebox"><input type="file" name="Anexo 1" accept=".pdf,.jpg,.jpeg,.png"></div>
+          <div class="filebox"><input type="file" name="Anexo 2" accept=".pdf,.jpg,.jpeg,.png"></div>
+          <div class="filebox"><input type="file" name="Anexo 3" accept=".pdf,.jpg,.jpeg,.png"></div>
+        </div>
+        <div class="hint">Formatos PDF, JPG ou PNG. Limite de <strong>10 MB somados</strong> por envio. Se os documentos forem maiores, envie em mais de uma manifestação, informando no texto que se trata de complemento.</div>
+        <div id="filestatus" aria-live="polite"></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Declarações</legend>
+      <div class="privacy">
+        <strong>Privacidade (LGPD).</strong> Os dados e documentos enviados serão usados exclusivamente pelo Administrador Judicial para análise do crédito e para a condução do processo de falência, podendo ser juntados aos autos ou apresentados ao Juízo. O tratamento se baseia no cumprimento de obrigação legal e no exercício regular de direitos em processo judicial (Lei 13.709/2018, art. 7º, II e VI). Dúvidas sobre o uso dos seus dados: <a href="mailto:manifestacoes@falenciaxinguleder.com.br">manifestacoes@falenciaxinguleder.com.br</a>.
+      </div>
+      <label class="check"><input type="checkbox" id="c1" name="Declaração de veracidade" value="Sim" required> <span>Declaro que as informações prestadas são verdadeiras e que os documentos anexados correspondem aos originais. <span class="req">*</span></span></label>
+      <label class="check"><input type="checkbox" id="c2" name="Ciência sobre privacidade" value="Sim" required> <span>Li e estou ciente do uso dos meus dados descrito acima. <span class="req">*</span></span></label>
+    </fieldset>
+
+    <button type="submit" id="send">Enviar manifestação</button>
+    <p class="hint" style="margin-top:12px">Após clicar em enviar, pode ser exibida uma verificação de segurança ("não sou um robô"). Conclua-a para finalizar o envio.</p>
+  </form>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Página mantida pelo Administrador Judicial nos termos do art. 22, I, "k", da Lei 11.101/2005. As informações aqui publicadas não substituem os autos.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('form');
+  var status=document.getElementById('filestatus');
+  var MAX=10*1024*1024;
+  var files=[].slice.call(form.querySelectorAll('input[type=file]'));
+
+  function totalSize(){return files.reduce(function(s,i){return s+(i.files[0]?i.files[0].size:0)},0)}
+  function fmt(b){return (b/1024/1024).toFixed(1).replace('.',',')+' MB'}
+  function check(){
+    var t=totalSize();
+    if(!t){status.textContent='';status.className='';return true}
+    var ok=t<=MAX;
+    status.textContent='Total anexado: '+fmt(t)+(ok?'':' — acima do limite de 10 MB. Remova ou reduza algum arquivo.');
+    status.className=ok?'':'bad';
+    return ok;
+  }
+  files.forEach(function(i){i.addEventListener('change',check)});
+
+  function pad(n){return String(n).padStart(2,'0')}
+  function protocolo(){
+    var d=new Date();
+    var chars='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',r='';
+    for(var k=0;k<4;k++) r+=chars[Math.floor(Math.random()*chars.length)];
+    return 'XGL-'+d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'-'+pad(d.getHours())+pad(d.getMinutes())+'-'+r;
+  }
+
+  form.addEventListener('submit',function(e){
+    if(!form.checkValidity()){e.preventDefault();form.reportValidity();return}
+    if(!check()){e.preventDefault();status.scrollIntoView({block:'center'});return}
+    var p=protocolo();
+    var nome=document.getElementById('nome').value.trim();
+    var d=new Date();
+    document.getElementById('f_protocolo').value=p;
+    document.getElementById('f_datahora').value=d.toLocaleString('pt-BR');
+    document.getElementById('f_subject').value='Manifestação '+p+' – '+nome;
+    document.getElementById('f_next').value='https://falenciaxinguleder.com.br/manifestacao-enviada.html?p='+encodeURIComponent(p);
+    document.getElementById('f_auto').value='Recebemos a sua manifestação na falência de Xinguleder Couros Ltda. (Processo nº 3015102-95.2006.8.13.0702). Protocolo: '+p+'. Guarde este número para eventual contato. A manifestação será analisada pela Administração Judicial. Este é um e-mail automático; não é necessário respondê-lo.';
+    var b=document.getElementById('send');b.disabled=true;b.textContent='Enviando…';
+  });
+})();
+</script>
+</body>
+</html>
