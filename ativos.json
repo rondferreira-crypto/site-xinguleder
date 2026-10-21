@@ -1,0 +1,365 @@
+{
+ "atualizado_em": "30/09/2026",
+ "referencia": "Relatório de Arrecadação de Ativos e Apêndices 01 a 05, juntados aos autos em 21/10/2026",
+ "imoveis": [
+  {
+   "cidade": "Uberlândia",
+   "uf": "MG",
+   "endereco": "Av. Juscelino Kubitschek",
+   "quadra": "Gleba 1",
+   "area": "—",
+   "bairro": "Dona Zulmira",
+   "tipo": "Lote",
+   "matricula": "2.495",
+   "unidades": 1
+  },
+  {
+   "cidade": "Uberlândia",
+   "uf": "MG",
+   "endereco": "Rua São João",
+   "quadra": "Urbano",
+   "area": "300 m²",
+   "bairro": "Pacaembu",
+   "tipo": "Lote",
+   "matricula": "18.136",
+   "unidades": 1
+  },
+  {
+   "cidade": "Itumbiara",
+   "uf": "GO",
+   "endereco": "Fazenda das Pombas",
+   "quadra": "Urbano 5",
+   "area": "—",
+   "bairro": "Industrial",
+   "tipo": "Edificação",
+   "matricula": "12.153",
+   "unidades": 1
+  },
+  {
+   "cidade": "Nova Esperança do Sul",
+   "uf": "RS",
+   "endereco": "Rua Barão do Amazonas, 1.493",
+   "quadra": "—",
+   "area": "2.580 m² / 496 m²",
+   "bairro": "Vila Nova Esperança do Sul",
+   "tipo": "Trecho de rua",
+   "matricula": "3.411",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua São Caetano do Sul, 33",
+   "quadra": "Conjunto industrial",
+   "area": "33.419,40 m²",
+   "bairro": "Matadouro",
+   "tipo": "Edificação",
+   "matricula": "512",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua São Caetano do Sul",
+   "quadra": "Barracão 400 m²",
+   "area": "3.160,75 m²",
+   "bairro": "Distrito Industrial",
+   "tipo": "Edificação",
+   "matricula": "3.307",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua São Bernardo",
+   "quadra": "Terreno",
+   "area": "3.168,05 m²",
+   "bairro": "Distrito Industrial",
+   "tipo": "Edificação",
+   "matricula": "14.548",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "611,80 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.684",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "527,04 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.685",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "543,84 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.686",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "560,88 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.687",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "577,68 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.688",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "589,32 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.689",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "595,80 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.690",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "602,40 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.691",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "608,88 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.692",
+   "unidades": 1
+  },
+  {
+   "cidade": "Mococa",
+   "uf": "SP",
+   "endereco": "Rua Barão de Monte Santo",
+   "quadra": "Urbano",
+   "area": "695,42 m²",
+   "bairro": "Jardim São Luiz",
+   "tipo": "Lote",
+   "matricula": "13.693",
+   "unidades": 1
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Av. Felipe Elias Zeitune",
+   "quadra": "Quadra C",
+   "area": "3.232 m²",
+   "bairro": "Bairro do Angola",
+   "tipo": "Terreno",
+   "matricula": "12.009",
+   "unidades": 1
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 13",
+   "area": "20 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.701 a 7.720",
+   "unidades": 20
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 14",
+   "area": "28 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.721 a 7.748",
+   "unidades": 28
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 15",
+   "area": "22 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.749 a 7.770",
+   "unidades": 22
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 16",
+   "area": "17 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.771 a 7.787",
+   "unidades": 17
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 17",
+   "area": "34 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.788 a 7.821",
+   "unidades": 34
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 18",
+   "area": "24 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.822 a 7.845",
+   "unidades": 24
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 19",
+   "area": "21 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.846 a 7.866",
+   "unidades": 21
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 20",
+   "area": "18 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.867 a 7.884",
+   "unidades": 18
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 21",
+   "area": "17 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.885 a 7.901",
+   "unidades": 17
+  },
+  {
+   "cidade": "Guaxupé",
+   "uf": "MG",
+   "endereco": "Loteamento Vila Progresso",
+   "quadra": "Quadra 22",
+   "area": "20 lotes",
+   "bairro": "Vila Progresso",
+   "tipo": "Terreno",
+   "matricula": "7.902 a 7.921",
+   "unidades": 20
+  }
+ ],
+ "moveis": [
+  {
+   "local": "Unidade fabril de Uberlândia/MG",
+   "total": 402,
+   "categorias": {
+    "Máquinas e equipamentos": 207,
+    "Móveis e utensílios": 191,
+    "Veículos": 4
+   },
+   "condicao": {
+    "Ótimo": 4,
+    "Bom": 174,
+    "Regular": 145,
+    "Ruim": 10,
+    "Sucata": 61,
+    "Sem classificação": 8
+   }
+  },
+  {
+   "local": "Unidade fabril de Itumbiara/GO",
+   "total": 553,
+   "categorias": {
+    "Móveis e utensílios": 363,
+    "Máquinas e equipamentos": 190
+   },
+   "condicao": {
+    "Ótimo": 2,
+    "Bom": 210,
+    "Regular": 282,
+    "Ruim": 3,
+    "Sucata": 43,
+    "Sem classificação": 13
+   }
+  },
+  {
+   "local": "Depósito de Estância Velha/RS",
+   "total": 23,
+   "categorias": {
+    "Máquinas e equipamentos de curtume": 23
+   },
+   "condicao": {}
+  }
+ ],
+ "financeiro": {
+  "saldo": "4.779.402,70",
+  "saldo_data": "31/08/2026",
+  "contas": 24,
+  "periodo": "01/01/2019 a 30/09/2026",
+  "saidas": "0,00"
+ },
+ "documentos": []
+}

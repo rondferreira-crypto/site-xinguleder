@@ -87,6 +87,18 @@
     .ativos td[data-l]::before{content:attr(data-l)": ";color:var(--muted);font-size:.82rem}
     .num{text-align:left}
   }
+  .alert{background:#fdf3e1;color:#6b4a0c;border:1px solid #f0d9a8;border-radius:10px;padding:12px 16px;margin-top:16px;font-size:.95rem}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .alert{background:#33280f;color:#f0d79a;border-color:#5a4718} }
+  :root[data-theme="dark"] .alert{background:#33280f;color:#f0d79a;border-color:#5a4718}
+  h3.sub{font-family:"Source Serif 4",serif;font-size:1.25rem;margin:32px 0 4px}
+  .stat small{display:block;color:var(--muted);font-size:.84rem;margin-top:2px}
+  .bars{margin:10px 0 0;padding:0;list-style:none;font-size:.9rem}
+  .bars li{display:grid;grid-template-columns:120px 1fr 44px;gap:8px;align-items:center;margin:4px 0}
+  .bars .bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+  .bars .bar i{display:block;height:100%;background:var(--brand)}
+  .bars b{text-align:right;font-weight:600}
+  .card .big{font-family:"Source Serif 4",serif;font-size:1.6rem;font-weight:700;line-height:1.2}
+  .hint{font-size:.85rem;color:var(--muted);margin-top:10px}
   .docs{width:100%;border-collapse:collapse;margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:.95rem}
   .docs th,.docs td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
   .docs th{font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
@@ -128,7 +140,7 @@
       <h1>Massa Falida de Xinguleder Couros Ltda.</h1>
       <p style="margin-top:-6px;font-size:.95rem">Nova denominação de Braspelco · Processo nº 3015102-95.2006.8.13.0702 · 6ª Vara Cível da Comarca de Uberlândia/MG</p>
       <p>Este é o canal oficial de informações do processo de falência, mantido pelo Administrador Judicial em cumprimento ao art. 22, I, "k", da Lei 11.101/2005. Aqui credores e interessados encontram editais, prazos, relatórios e as peças principais do processo.</p>
-      <div class="status"><span class="dot"></span> Situação atual: consolidação do Quadro-Geral de Credores</div>
+      <div class="status"><span class="dot"></span> Situação atual: Quadro-Geral de Credores consolidado apresentado nos autos</div>
     </div>
   </div>
 
@@ -137,7 +149,7 @@
       <h2>Dados do processo</h2>
       <p class="lead">Informações de identificação da falida e do juízo responsável.</p>
       <div class="grid">
-        <dl class="card"><dt>Falida</dt><dd>Xinguleder Couros Ltda.<br><span style="font-weight:400;color:var(--muted);font-size:.9rem">nova denominação de Braspelco</span></dd></dl>
+        <dl class="card"><dt>Falida</dt><dd>Xinguleder Couros Ltda.<br><span style="font-weight:400;color:var(--muted);font-size:.9rem">nova denominação de Braspelco</span></dd><dt style="margin-top:10px">CNPJ</dt><dd>22.312.045/0001-34</dd></dl>
         <dl class="card"><dt>Processo nº</dt><dd>3015102-95.2006.8.13.0702</dd><dt style="margin-top:10px">Juízo</dt><dd>6ª Vara Cível da Comarca de Uberlândia/MG</dd></dl>
         <dl class="card"><dt>Decretação da falência</dt><dd>02/12/2013</dd></dl>
         <dl class="card"><dt>Administrador Judicial</dt><dd>Rondinélio Ferreira Rodrigues</dd><dt style="margin-top:10px">Registro</dt><dd>CRC-MG 090.142/O-0 · OAB/MG 189.397</dd></dl>
@@ -149,6 +161,11 @@
     <div class="wrap">
       <h2>Avisos e editais</h2>
       <p class="lead">Publicações mais recentes, da mais nova para a mais antiga.</p>
+      <div class="notice">
+        <time>21/10/2026</time>
+        <div><strong>Juntada de relatórios da Administração Judicial</strong><br>
+        Foram juntados aos autos o relatório consolidado dos processos judiciais da massa falida, o relatório de arrecadação de ativos e o Quadro-Geral de Credores consolidado. Veja o <a href="#qgc">resumo do QGC</a>, os <a href="#ativos">ativos arrecadados</a> e os <a href="#documentos">documentos</a>.</div>
+      </div>
       <div class="notice">
         <time>20/10/2026</time>
         <div><strong>Formulário de manifestação de credores</strong><br>
@@ -168,11 +185,30 @@
       <h2>Orientações aos credores</h2>
       <p class="lead">O Quadro-Geral de Credores está em consolidação, a partir da relação apresentada pela falida e das manifestações e decisões já proferidas. Os créditos têm como data-base 02/12/2013, data da decretação da falência (art. 9º, II, da Lei 11.101/2005).</p>
       <ol class="steps">
-        <li><strong>Confira a relação de credores.</strong> Quando o Quadro-Geral consolidado for apresentado nos autos, ele será disponibilizado nesta página. Verifique se seu crédito consta e se o valor e a classificação estão corretos.</li>
+        <li><strong>Confira a relação de credores.</strong> O Quadro-Geral de Credores consolidado foi apresentado nos autos em 21/10/2026 (<a href="#qgc">resumo abaixo</a> e <a href="anexo-IV-relatorio-quadro-geral-credores.pdf" target="_blank" rel="noopener">relatório completo</a>). Verifique se o seu crédito consta e se o valor e a classificação estão corretos.</li>
         <li><strong>Créditos ainda não habilitados.</strong> Podem ser apresentados como habilitação retardatária (art. 10 da Lei 11.101/2005), por petição nos autos ou, conforme o caso, por manifestação administrativa ao Administrador Judicial.</li>
         <li><strong>Reúna os documentos.</strong> Informe nome, CPF/CNPJ, endereço, valor do crédito na data da decretação (02/12/2013), origem e classificação, e anexe os documentos comprobatórios (art. 9º).</li>
         <li><strong>Envie pelo canal oficial.</strong> Use o <a href="manifestacao.html">formulário de manifestação de credor</a>, onde é possível escrever a manifestação e anexar documentos. Você recebe um número de protocolo na hora.</li>
       </ol>
+      <div id="qgc" style="margin-top:28px">
+        <h3 class="sub" style="margin-top:0">Quadro-Geral de Credores — resumo por classe</h3>
+        <p class="hint" style="margin-top:0">Valores na data da decretação da falência (02/12/2013) e referência atualizada até 30/09/2026 (fator TJMG, sem juros após a quebra). A referência atualizada é gerencial e não altera o valor do crédito. Apresentado nos autos em 21/10/2026, sujeito a impugnação e à homologação pelo Juízo.</p>
+        <div class="tablewrap">
+          <table class="docs ativos">
+            <thead><tr><th>Classe (art. 83, Lei 11.101/2005)</th><th class="num">Registros</th><th class="num">Valor em 02/12/2013</th><th class="num">Referência 30/09/2026</th></tr></thead>
+            <tbody>
+              <tr><td data-l="Classe">I — Trabalhistas e equiparados</td><td data-l="Registros" class="num">26</td><td data-l="Valor em 02/12/2013" class="num">R$ 998.677,29</td><td data-l="Referência 30/09/2026" class="num">R$ 1.962.701,02</td></tr>
+              <tr><td data-l="Classe">II — Garantia real</td><td data-l="Registros" class="num">2</td><td data-l="Valor em 02/12/2013" class="num">R$ 159.361.343,00</td><td data-l="Referência 30/09/2026" class="num">R$ 319.650.806,46</td></tr>
+              <tr><td data-l="Classe">III — Tributários</td><td data-l="Registros" class="num">15</td><td data-l="Valor em 02/12/2013" class="num">R$ 112.485.946,19</td><td data-l="Referência 30/09/2026" class="num">R$ 225.627.010,53</td></tr>
+              <tr><td data-l="Classe">VI — Quirografários</td><td data-l="Registros" class="num">243</td><td data-l="Valor em 02/12/2013" class="num">R$ 179.574.177,35</td><td data-l="Referência 30/09/2026" class="num">R$ 360.169.210,60</td></tr>
+              <tr><td data-l="Classe">VII — Multas e penas pecuniárias</td><td data-l="Registros" class="num">4</td><td data-l="Valor em 02/12/2013" class="num">R$ 7.735.130,79</td><td data-l="Referência 30/09/2026" class="num">R$ 15.515.310,98</td></tr>
+              <tr><td data-l="Classe">VIII — Subordinados</td><td data-l="Registros" class="num">9</td><td data-l="Valor em 02/12/2013" class="num">R$ 4.946.645,07</td><td data-l="Referência 30/09/2026" class="num">R$ 9.922.099,39</td></tr>
+              <tr><td data-l="Classe"><strong>Total dos créditos concursais</strong></td><td data-l="Registros" class="num"><strong>299</strong></td><td data-l="Valor em 02/12/2013" class="num"><strong>R$ 465.101.919,69</strong></td><td data-l="Referência 30/09/2026" class="num"><strong>R$ 932.847.138,98</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hint">Pedidos de restituição (art. 86) são controlados à parte e não integram os totais acima. Para a relação nominal e os critérios adotados, consulte o <a href="anexo-IV-relatorio-quadro-geral-credores.pdf" target="_blank" rel="noopener">relatório do QGC</a>.</p>
+      </div>
       <p style="margin-top:20px"><a class="cta" href="manifestacao.html">Apresentar manifestação sobre o meu crédito →</a></p>
     </div>
   </section>
@@ -180,21 +216,33 @@
   <section id="ativos">
     <div class="wrap">
       <h2>Ativos arrecadados</h2>
-      <p class="lead">Bens e direitos arrecadados pela Administração Judicial para composição da massa falida (arts. 108 a 114 da Lei 11.101/2005), com a avaliação e a situação de cada um.</p>
+      <p class="lead">Bens e direitos da falida identificados pela Administração Judicial (arts. 22, III, e 108 da Lei 11.101/2005), conforme o relatório de arrecadação juntado aos autos.</p>
+      <div class="alert" id="ativos-ressalva" hidden><strong>Relação preliminar.</strong> Os bens ainda não passaram por avaliação judicial. Os valores de mercado ou de realização serão apurados por avaliador especializado, com autorização do Juízo, antes de qualquer alienação.</div>
       <div class="stats" id="ativos-stats" hidden>
-        <div class="stat"><span>Itens arrecadados</span><b id="st-qtd">–</b></div>
-        <div class="stat"><span>Valor total de avaliação</span><b id="st-total">–</b></div>
-        <div class="stat"><span>Itens alienados</span><b id="st-alien">–</b></div>
+        <div class="stat"><span>Imóveis</span><b id="st-imoveis">–</b><small id="st-imoveis-sub"></small></div>
+        <div class="stat"><span>Bens móveis</span><b id="st-moveis">–</b><small id="st-moveis-sub"></small></div>
+        <div class="stat"><span>Saldo em contas judiciais</span><b id="st-fin">–</b><small id="st-fin-sub"></small></div>
       </div>
-      <div class="filters" id="ativos-filtros" hidden></div>
-      <div class="tablewrap">
-        <table class="docs ativos" id="ativos-tabela" hidden>
-          <thead><tr><th>Item</th><th>Descrição</th><th>Arrecadação</th><th class="num">Avaliação</th><th>Situação</th><th>Documento</th></tr></thead>
-          <tbody></tbody>
-        </table>
+
+      <div id="ativos-conteudo" hidden>
+        <h3 class="sub">Imóveis</h3>
+        <div class="filters" id="f-cidades"></div>
+        <div class="tablewrap">
+          <table class="docs ativos" id="t-imoveis">
+            <thead><tr><th>Município</th><th>Endereço</th><th>Quadra / lote</th><th>Área ou quantidade</th><th>Tipo</th><th>Matrícula</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <h3 class="sub">Bens móveis, máquinas e equipamentos</h3>
+        <div class="grid" id="g-moveis"></div>
+        <p class="hint">Estado de conservação conforme os relatórios de ativo imobilizado, sem avaliação técnica.</p>
+
+        <h3 class="sub">Ativos financeiros</h3>
+        <div class="card fin" id="c-fin"></div>
       </div>
       <p class="empty" id="ativos-vazio">O auto de arrecadação e a relação dos bens serão publicados nesta seção.</p>
-      <p class="hint" id="ativos-nota" hidden style="font-size:.85rem;color:var(--muted);margin-top:10px">Valores de avaliação conforme laudos juntados aos autos. Informações sujeitas a atualização; prevalece o conteúdo do processo.</p>
+      <p class="hint" id="ativos-nota" hidden></p>
     </div>
   </section>
 
@@ -207,7 +255,14 @@
           <thead><tr><th>Documento</th><th>Data</th><th>Arquivo</th></tr></thead>
           <tbody>
             <tr><td>Sentença de decretação da falência</td><td>02/12/2013</td><td>Disponível em breve</td></tr>
-            <tr><td>Quadro-Geral de Credores consolidado</td><td>—</td><td>Em elaboração</td></tr>
+            <tr><td>Anexo IV — Relatório do Quadro-Geral de Credores consolidado</td><td>21/10/2026</td><td><a href="anexo-IV-relatorio-quadro-geral-credores.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">320 KB</small></td></tr>
+            <tr><td>Anexo III — Relatório de arrecadação de ativos</td><td>21/10/2026</td><td><a href="anexo-III-relatorio-arrecadacao-ativos.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">410 KB</small></td></tr>
+            <tr><td>Apêndice 01 — Relação dos imóveis arrecadados</td><td>21/10/2026</td><td><a href="apendice-01-imoveis-arrecadados.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">60 KB</small></td></tr>
+            <tr><td>Apêndice 02 — Bens móveis: unidade fabril de Uberlândia</td><td>21/10/2026</td><td><a href="apendice-02-moveis-uberlandia.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
+            <tr><td>Apêndice 03 — Bens móveis: unidade fabril de Itumbiara</td><td>21/10/2026</td><td><a href="apendice-03-moveis-itumbiara.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
+            <tr><td>Apêndice 04 — Bens móveis: depósito de Estância Velha</td><td>21/10/2026</td><td><a href="apendice-04-moveis-estancia-velha.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">55 KB</small></td></tr>
+            <tr><td>Anexo I — Relatório analítico dos processos judiciais (264 processos), parte 1</td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-1.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">3,3 MB</small></td></tr>
+            <tr><td>Anexo I — Relatório analítico dos processos judiciais, parte 2</td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-2.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">3,8 MB</small></td></tr>
           </tbody>
         </table>
       </div>
@@ -234,64 +289,46 @@
 
 <script>
 (function(){
-  var SIT={'arrecadado':'Arrecadado','avaliado':'Avaliado','em alienação':'Em alienação','em alienacao':'Em alienação','alienado':'Alienado'};
-  function parseCSV(t){
-    t=t.replace(/^\uFEFF/,'');
-    var first=t.split(/\r?\n/)[0]||'';
-    var d=(first.split(';').length>=first.split(',').length)?';':',';
-    var rows=[],row=[],f='',q=false;
-    for(var i=0;i<t.length;i++){
-      var c=t[i];
-      if(q){ if(c=='"'){ if(t[i+1]=='"'){f+='"';i++} else q=false } else f+=c; }
-      else if(c=='"') q=true;
-      else if(c==d){row.push(f);f=''}
-      else if(c=='\n'||c=='\r'){ if(c=='\r'&&t[i+1]=='\n')i++; row.push(f);rows.push(row);row=[];f=''; }
-      else f+=c;
+  function esc(v){var e=document.createElement('span');e.textContent=v==null?'':String(v);return e.innerHTML}
+  function n(v){return Number(v).toLocaleString('pt-BR')}
+  fetch('ativos.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+    if(!d||!d.imoveis||!d.imoveis.length)return;
+    // totais
+    var und=d.imoveis.reduce(function(s,x){return s+(x.unidades||1)},0);
+    var cids={};d.imoveis.forEach(function(x){cids[x.cidade+'/'+x.uf]=1});
+    document.getElementById('st-imoveis').textContent=n(und);
+    document.getElementById('st-imoveis-sub').textContent='em '+Object.keys(cids).length+' municípios';
+    var mv=d.moveis.reduce(function(s,x){return s+x.total},0);
+    document.getElementById('st-moveis').textContent=n(mv);
+    document.getElementById('st-moveis-sub').textContent='em '+d.moveis.length+' locais';
+    if(d.financeiro&&d.financeiro.saldo){
+      document.getElementById('st-fin').textContent='R$ '+d.financeiro.saldo;
+      document.getElementById('st-fin-sub').textContent='em '+d.financeiro.saldo_data;
     }
-    if(f!==''||row.length){row.push(f);rows.push(row)}
-    var h=(rows.shift()||[]).map(function(x){return x.trim().toLowerCase()});
-    return rows.filter(function(r){return r.some(function(x){return x.trim()})}).map(function(r){var o={};h.forEach(function(k,j){o[k]=(r[j]||'').trim()});return o});
-  }
-  function num(v){ if(!v)return NaN; v=String(v).replace(/[R$\s]/g,''); if(v.indexOf(',')>-1) v=v.replace(/\./g,'').replace(',','.'); return parseFloat(v); }
-  function brl(n){ return isNaN(n)?'—':n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}); }
-  function esc(s){ var e=document.createElement('span'); e.textContent=s||''; return e.innerHTML; }
-  function sit(v){ var k=(v||'').toLowerCase().trim(); return SIT[k]||v||'—'; }
-  function cls(v){ var k=sit(v); return k=='Alienado'?'s-alienado':(k=='Em alienação'?'s-alienacao':''); }
-  function safeUrl(u){ return /^(https?:\/\/|documentos\/)/i.test(u||'')?u:''; }
-
-  var data=[], filtro='Todos';
-  function render(){
-    var tb=document.querySelector('#ativos-tabela tbody'), html='';
-    data.filter(function(a){return filtro=='Todos'||sit(a.situacao)==filtro}).forEach(function(a){
-      var url=safeUrl(a.documento_url);
-      html+='<tr>'+
-        '<td data-l="Item"><strong>'+esc(a.codigo)+'</strong><small>'+esc(a.tipo)+'</small></td>'+
-        '<td data-l="Descrição">'+esc(a.descricao)+(a.localizacao?'<small>'+esc(a.localizacao)+'</small>':'')+(a.registro?'<small>'+esc(a.registro)+'</small>':'')+(a.observacoes?'<small>'+esc(a.observacoes)+'</small>':'')+'</td>'+
-        '<td data-l="Arrecadação">'+esc(a.data_arrecadacao||'—')+'</td>'+
-        '<td data-l="Avaliação" class="num">'+brl(num(a.valor_avaliacao))+(a.data_avaliacao?'<small>em '+esc(a.data_avaliacao)+'</small>':'')+'</td>'+
-        '<td data-l="Situação"><span class="badge '+cls(a.situacao)+'">'+esc(sit(a.situacao))+'</span></td>'+
-        '<td data-l="Documento">'+(url?'<a href="'+esc(url)+'" target="_blank" rel="noopener">Abrir</a>':'—')+'</td>'+
-      '</tr>';
-    });
-    tb.innerHTML=html;
-  }
-  fetch('ativos.csv',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){
-    data=parseCSV(t);
-    if(!data.length) return;
-    var total=data.reduce(function(s,a){var n=num(a.valor_avaliacao);return s+(isNaN(n)?0:n)},0);
-    document.getElementById('st-qtd').textContent=data.length;
-    document.getElementById('st-total').textContent=brl(total);
-    document.getElementById('st-alien').textContent=data.filter(function(a){return sit(a.situacao)=='Alienado'}).length;
-    var sits=['Todos'];data.forEach(function(a){var k=sit(a.situacao);if(sits.indexOf(k)<0)sits.push(k)});
-    var fb=document.getElementById('ativos-filtros');
-    if(sits.length>2){
-      sits.forEach(function(k){var b=document.createElement('button');b.className='chip';b.type='button';b.textContent=k;b.setAttribute('aria-pressed',k==filtro);
-        b.onclick=function(){filtro=k;[].forEach.call(fb.children,function(x){x.setAttribute('aria-pressed',x===b)});render()};fb.appendChild(b)});
-      fb.hidden=false;
+    // imoveis + filtro
+    var tb=document.querySelector('#t-imoveis tbody'),filtro='Todos';
+    function render(){
+      tb.innerHTML=d.imoveis.filter(function(x){return filtro=='Todos'||(x.cidade+'/'+x.uf)==filtro}).map(function(x){
+        return '<tr><td data-l="Município"><strong>'+esc(x.cidade)+'/'+esc(x.uf)+'</strong></td><td data-l="Endereço">'+esc(x.endereco)+'<small>'+esc(x.bairro)+'</small></td><td data-l="Quadra / lote">'+esc(x.quadra)+'</td><td data-l="Área ou quantidade">'+esc(x.area)+'</td><td data-l="Tipo">'+esc(x.tipo)+'</td><td data-l="Matrícula">'+esc(x.matricula)+'</td></tr>'}).join('');
     }
-    ['ativos-stats','ativos-tabela','ativos-nota'].forEach(function(id){document.getElementById(id).hidden=false});
-    document.getElementById('ativos-vazio').hidden=true;
+    var fb=document.getElementById('f-cidades');
+    ['Todos'].concat(Object.keys(cids)).forEach(function(k){var b=document.createElement('button');b.type='button';b.className='chip';
+      var c=k=='Todos'?und:d.imoveis.filter(function(x){return x.cidade+'/'+x.uf==k}).reduce(function(s,x){return s+(x.unidades||1)},0);
+      b.textContent=k+' ('+c+')';b.setAttribute('aria-pressed',k==filtro);
+      b.onclick=function(){filtro=k;[].forEach.call(fb.children,function(z){z.setAttribute('aria-pressed',z===b)});render()};fb.appendChild(b)});
     render();
+    // moveis
+    document.getElementById('g-moveis').innerHTML=d.moveis.map(function(m){
+      var cond=Object.keys(m.condicao||{});
+      var bars=cond.length?'<ul class="bars">'+cond.map(function(k){var v=m.condicao[k];return '<li><span>'+esc(k)+'</span><span class="bar"><i style="width:'+(100*v/m.total).toFixed(1)+'%"></i></span><b>'+n(v)+'</b></li>'}).join('')+'</ul>':'';
+      var cats=Object.keys(m.categorias).map(function(k){return esc(k)+': '+n(m.categorias[k])}).join(' · ');
+      return '<div class="card"><h3 style="font-size:1.05rem;margin:0">'+esc(m.local)+'</h3><div class="big">'+n(m.total)+' <span style="font-size:.95rem;font-family:Inter,sans-serif;font-weight:500;color:var(--muted)">itens</span></div><p style="margin:.3em 0 0">'+cats+'</p>'+bars+'</div>'}).join('');
+    // financeiro
+    var f=d.financeiro||{};
+    document.getElementById('c-fin').innerHTML='<div class="big">R$ '+esc(f.saldo)+'</div><p style="margin:.3em 0 0">Saldo em '+esc(f.saldo_data)+', custodiado em '+esc(f.contas)+' contas judiciais vinculadas ao Juízo Falimentar, entre depósitos arrecadados de outros processos e rendimentos. Sem saídas no período de '+esc(f.periodo)+'. Os valores ficam à disposição do Juízo para pagamento dos credores, conforme o Quadro-Geral de Credores e o plano de rateio.</p>';
+    document.getElementById('ativos-nota').textContent='Fonte: '+d.referencia+'. Informações sujeitas a atualização; prevalece o conteúdo dos autos.';
+    ['ativos-ressalva','ativos-stats','ativos-conteudo','ativos-nota'].forEach(function(id){document.getElementById(id).hidden=false});
+    document.getElementById('ativos-vazio').hidden=true;
   }).catch(function(){});
 })();
 </script>
