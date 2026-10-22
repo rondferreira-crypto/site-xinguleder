@@ -53,6 +53,11 @@
   .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
   .card dt{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
   .card dd{margin:4px 0 0;font-weight:500}
+  .card dd.nw{white-space:nowrap;font-size:clamp(.82rem,1.25vw,1rem)}
+  @media (max-width:359px){ .card dd.nw{white-space:normal} }
+  .docs th.num,.docs td.num{text-align:right;font-variant-numeric:tabular-nums}
+  @media (min-width:900px){ .grid.proc{grid-template-columns:1fr 1.3fr .8fr 1.3fr} }
+  @media (max-width:899px){ .grid.proc{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))} }
   .card h3{font-size:1.15rem}
   .card p{margin:.3em 0;color:var(--muted)}
 
@@ -85,7 +90,7 @@
     .ativos tr{border-bottom:1px solid var(--line);padding:10px 0}
     .ativos td{border:0;padding:4px 14px}
     .ativos td[data-l]::before{content:attr(data-l)": ";color:var(--muted);font-size:.82rem}
-    .num{text-align:left}
+    .num,.docs td.num,.docs th.num{text-align:left}
   }
   .alert{background:#fdf3e1;color:#6b4a0c;border:1px solid #f0d9a8;border-radius:10px;padding:12px 16px;margin-top:16px;font-size:.95rem}
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .alert{background:#33280f;color:#f0d79a;border-color:#5a4718} }
@@ -103,6 +108,8 @@
   .docs th,.docs td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
   .docs th{font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
   .docs tr:last-child td{border-bottom:0}
+  .docs tr.sub td:first-child{padding-left:38px;position:relative}
+  .docs tr.sub td:first-child::before{content:"↳";position:absolute;left:18px;color:var(--muted)}
   .tablewrap{overflow-x:auto}
 
   footer{padding:32px 0 48px;color:var(--muted);font-size:.88rem}
@@ -148,11 +155,11 @@
     <div class="wrap">
       <h2>Dados do processo</h2>
       <p class="lead">Informações de identificação da falida e do juízo responsável.</p>
-      <div class="grid">
+      <div class="grid proc">
         <dl class="card"><dt>Falida</dt><dd>Xinguleder Couros Ltda.<br><span style="font-weight:400;color:var(--muted);font-size:.9rem">nova denominação de Braspelco</span></dd><dt style="margin-top:10px">CNPJ</dt><dd>22.312.045/0001-34</dd></dl>
-        <dl class="card"><dt>Processo nº</dt><dd>3015102-95.2006.8.13.0702</dd><dt style="margin-top:10px">Juízo</dt><dd>6ª Vara Cível da Comarca de Uberlândia/MG</dd></dl>
+        <dl class="card"><dt>Processo nº</dt><dd class="nw">3015102-95.2006.8.13.0702</dd><dt style="margin-top:10px">Juízo</dt><dd>6ª Vara Cível da Comarca de Uberlândia/MG</dd></dl>
         <dl class="card"><dt>Decretação da falência</dt><dd>02/12/2013</dd></dl>
-        <dl class="card"><dt>Administrador Judicial</dt><dd>Rondinélio Ferreira Rodrigues</dd><dt style="margin-top:10px">Registro</dt><dd>CRC-MG 090.142/O-0 · OAB/MG 189.397</dd></dl>
+        <dl class="card"><dt>Administrador Judicial</dt><dd class="nw">Rondinélio Ferreira Rodrigues</dd><dt style="margin-top:10px">Registro</dt><dd>CRC-MG 090.142/O-0 · OAB/MG 189.397</dd></dl>
       </div>
     </div>
   </section>
@@ -255,18 +262,18 @@
           <thead><tr><th>Documento</th><th>Data</th><th>Arquivo</th></tr></thead>
           <tbody>
             <tr><td>Sentença de decretação da falência</td><td>02/12/2013</td><td>Disponível em breve</td></tr>
-            <tr><td>Anexo IV — Relatório do Quadro-Geral de Credores consolidado</td><td>21/10/2026</td><td><a href="anexo-IV-relatorio-quadro-geral-credores.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">320 KB</small></td></tr>
-            <tr><td>Apêndice I — Quadro-Geral de Credores consolidado (relação nominal)<small style="display:block;color:var(--muted);font-size:.82rem">CPF parcialmente ocultado (LGPD)</small></td><td>21/10/2026</td><td><a href="apendice-I-qgc-consolidado.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">145 KB</small></td></tr>
-            <tr><td>Apêndice II — Planilha analítica do QGC<small style="display:block;color:var(--muted);font-size:.82rem">CPF parcialmente ocultado (LGPD)</small></td><td>21/10/2026</td><td><a href="apendice-II-qgc-planilha-analitica.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">340 KB</small></td></tr>
-            <tr><td>Anexo III — Relatório de arrecadação de ativos</td><td>21/10/2026</td><td><a href="anexo-III-relatorio-arrecadacao-ativos.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">410 KB</small></td></tr>
-            <tr><td>Apêndice 01 — Relação dos imóveis arrecadados</td><td>21/10/2026</td><td><a href="apendice-01-imoveis-arrecadados.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">60 KB</small></td></tr>
-            <tr><td>Apêndice 02 — Bens móveis: unidade fabril de Uberlândia</td><td>21/10/2026</td><td><a href="apendice-02-moveis-uberlandia.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
-            <tr><td>Apêndice 03 — Bens móveis: unidade fabril de Itumbiara</td><td>21/10/2026</td><td><a href="apendice-03-moveis-itumbiara.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
-            <tr><td>Apêndice 04 — Bens móveis: depósito de Estância Velha</td><td>21/10/2026</td><td><a href="apendice-04-moveis-estancia-velha.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">55 KB</small></td></tr>
-            <tr><td>Apêndice 05 — Arrecadação de ativos financeiros (contas judiciais)<small style="display:block;color:var(--muted);font-size:.82rem">Processos de origem dos depósitos omitidos (dados de terceiros)</small></td><td>21/10/2026</td><td><a href="apendice-05-ativos-financeiros.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">135 KB</small></td></tr>
+            <tr><td>Anexo I — Relatório analítico dos processos judiciais (264 processos), parte 1<small style="display:block;color:var(--muted);font-size:.82rem">Nomes e números de processos de pessoas físicas omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-1.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">4,7 MB</small></td></tr>
+            <tr><td>Anexo I — Relatório analítico dos processos judiciais, parte 2<small style="display:block;color:var(--muted);font-size:.82rem">Nomes e números de processos de pessoas físicas omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-2.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">5,7 MB</small></td></tr>
             <tr><td>Anexo II — Planilha consolidada dos PPPs emitidos<small style="display:block;color:var(--muted);font-size:.82rem">Nomes dos empregados substituídos por numeração (LGPD)</small></td><td>21/10/2026</td><td><a href="anexo-II-ppps-anonimizado.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">330 KB</small></td></tr>
-            <tr><td>Anexo I — Relatório analítico dos processos judiciais (264 processos), parte 1</td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-1.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">3,3 MB</small></td></tr>
-            <tr><td>Anexo I — Relatório analítico dos processos judiciais, parte 2</td><td>21/10/2026</td><td><a href="anexo-I-relatorio-processos-parte-2.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">3,8 MB</small></td></tr>
+            <tr><td>Anexo III — Relatório de arrecadação de ativos<small style="display:block;color:var(--muted);font-size:.82rem">Processos de terceiros omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="anexo-III-relatorio-arrecadacao-ativos.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">430 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice 01 do Anexo III — Relação dos imóveis arrecadados</td><td>21/10/2026</td><td><a href="apendice-01-imoveis-arrecadados.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">60 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice 02 do Anexo III — Bens móveis: unidade fabril de Uberlândia</td><td>21/10/2026</td><td><a href="apendice-02-moveis-uberlandia.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice 03 do Anexo III — Bens móveis: unidade fabril de Itumbiara</td><td>21/10/2026</td><td><a href="apendice-03-moveis-itumbiara.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">105 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice 04 do Anexo III — Bens móveis: depósito de Estância Velha</td><td>21/10/2026</td><td><a href="apendice-04-moveis-estancia-velha.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">55 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice 05 do Anexo III — Arrecadação de ativos financeiros (contas judiciais)<small style="display:block;color:var(--muted);font-size:.82rem">Processos de origem dos depósitos omitidos (dados de terceiros)</small></td><td>21/10/2026</td><td><a href="apendice-05-ativos-financeiros.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">135 KB</small></td></tr>
+            <tr><td>Anexo IV — Relatório do Quadro-Geral de Credores consolidado<small style="display:block;color:var(--muted);font-size:.82rem">CNPJ de credores privados parcialmente ocultado; processos de pessoas físicas omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="anexo-IV-relatorio-quadro-geral-credores.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">410 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice I do Anexo IV — Quadro-Geral de Credores consolidado (relação nominal)<small style="display:block;color:var(--muted);font-size:.82rem">CPF e CNPJ parcialmente ocultados, exceto de entes públicos; processos de pessoas físicas omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="apendice-I-qgc-consolidado.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">165 KB</small></td></tr>
+            <tr class="sub"><td>Apêndice II do Anexo IV — Planilha analítica do QGC<small style="display:block;color:var(--muted);font-size:.82rem">CPF e CNPJ parcialmente ocultados, exceto de entes públicos; processos de pessoas físicas omitidos (LGPD)</small></td><td>21/10/2026</td><td><a href="apendice-II-qgc-planilha-analitica.pdf" target="_blank" rel="noopener">PDF</a> <small style="color:var(--muted)">390 KB</small></td></tr>
           </tbody>
         </table>
       </div>
