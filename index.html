@@ -42,6 +42,8 @@
   .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:1.2px;text-transform:uppercase}
   .hero h1{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-top:8px}
   .hero p{max-width:680px;color:var(--muted);font-size:1.05rem}
+  .hero-box{width:fit-content;max-width:100%}
+  .hero-box p{width:0;min-width:100%;max-width:none;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
   .status{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.88rem}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
 
@@ -144,9 +146,11 @@
   <div class="hero">
     <div class="wrap">
       <div class="eyebrow">Página oficial do Administrador Judicial</div>
+      <div class="hero-box">
       <h1>Massa Falida de Xinguleder Couros Ltda.</h1>
       <p style="margin-top:-6px;font-size:.95rem">Nova denominação de Braspelco · Processo nº 3015102-95.2006.8.13.0702 · 6ª Vara Cível da Comarca de Uberlândia/MG</p>
       <p>Este é o canal oficial de informações do processo de falência, mantido pelo Administrador Judicial em cumprimento ao art. 22, I, "k", da Lei 11.101/2005. Aqui credores e interessados encontram editais, prazos, relatórios e as peças principais do processo.</p>
+      </div>
       <div class="status"><span class="dot"></span> Situação atual: Quadro-Geral de Credores consolidado apresentado nos autos</div>
     </div>
   </div>
