@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assembleia de Credores · Massa Falida Xinguleder</title>
+<meta name="description" content="Assembleia Geral de Credores da Massa Falida de Xinguleder Couros Ltda.: convocação, credenciamento, regras de votação, ata e gravação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f6f2; --surface:#ffffff; --ink:#1d2329; --muted:#5b646d; --line:#e2e0d8;
+    --brand:#173b57; --brand-ink:#ffffff; --accent:#a8792b; --err:#b42318; --ok:#1d7a46;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+      --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --err:#f97066; --ok:#47cd89;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12161a; --surface:#1a2026; --ink:#e8e6e1; --muted:#a2abb3; --line:#2c343c;
+    --brand:#22506f; --brand-ink:#ffffff; --accent:#d3a65a; --err:#f97066; --ok:#47cd89;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+  a{color:var(--brand)}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) a{color:#8fc1e3} }
+  .wrap{max-width:820px;margin:0 auto;padding:0 16px}
+  h1,h2{font-family:"Source Serif 4",Georgia,serif;line-height:1.25;margin:0 0 .5em}
+  header.top{background:var(--brand);color:var(--brand-ink)}
+  header.top .wrap{max-width:1080px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+  .mark{font-family:"Source Serif 4",serif;font-weight:700;font-size:1.15rem;color:var(--brand-ink);text-decoration:none}
+  .mark small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:.78rem;opacity:.85}
+  nav a{color:var(--brand-ink);text-decoration:none;font-size:.92rem;opacity:.9}
+  nav a:hover{opacity:1;text-decoration:underline}
+
+  .hero{padding:40px 0 24px}
+  .eyebrow{color:var(--accent);font-weight:600;font-size:.82rem;letter-spacing:1.2px;text-transform:uppercase}
+  .hero h1{font-size:clamp(1.7rem,4vw,2.4rem);margin-top:8px}
+  .hero p{color:var(--muted)}
+
+  form{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}
+  fieldset{border:0;padding:0;margin:0 0 24px}
+  legend{font-family:"Source Serif 4",serif;font-size:1.25rem;font-weight:600;margin-bottom:12px;padding:0}
+  .row{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+  @media (max-width:640px){ .row{grid-template-columns:1fr} form{padding:18px} }
+  label{display:block;font-weight:500;font-size:.95rem;margin-bottom:6px}
+  .req{color:var(--err)}
+  .hint{font-size:.85rem;color:var(--muted);margin-top:4px}
+  .field{margin-bottom:16px}
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+  textarea{min-height:180px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+  input[type=file]{font:inherit;font-size:.92rem;width:100%}
+  .files{display:grid;gap:10px}
+  .filebox{border:1px dashed var(--line);border-radius:8px;padding:10px 12px;background:var(--bg)}
+  #filestatus{font-size:.88rem;margin-top:8px;color:var(--muted)}
+  #filestatus.bad{color:var(--err);font-weight:500}
+  .check{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:.93rem}
+  .check input{margin-top:5px;flex:none;width:18px;height:18px}
+  .privacy{font-size:.88rem;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:14px}
+  button{font:inherit;font-weight:600;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:12px 22px;cursor:pointer}
+  button[disabled]{opacity:.6;cursor:wait}
+  .notice{border-left:4px solid var(--accent);background:var(--surface);border-radius:8px;padding:14px 16px;margin-bottom:20px;border:1px solid var(--line);border-left-width:4px;font-size:.95rem}
+  footer{padding:24px 0 40px;color:var(--muted);font-size:.88rem}
+
+  .status{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:28px;display:grid;gap:10px}
+  .status .tag{justify-self:start;font-size:.78rem;font-weight:600;letter-spacing:.8px;text-transform:uppercase;padding:3px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+  .status .tag.on{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+  .status dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:4px 0 0}
+  .status dt{color:var(--muted);font-size:.9rem}
+  .status dd{margin:0;font-weight:500}
+  section{margin:0 0 34px}
+  h2{font-size:1.45rem}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+  ol.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-weight:600;font-size:.9rem}
+  ol.steps li>div>strong:first-child{display:block}
+  .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:.93rem}
+  th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{background:var(--bg);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  tr:last-child td{border-bottom:0}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600}
+  details p{margin:.6em 0 0;color:var(--muted)}
+  .example{font-size:.92rem;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:12px 14px;margin-top:12px}
+  .closed{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--muted)}
+  .docs a{font-weight:500}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="./">Massa Falida Xinguleder
+      <small>Administração Judicial · Lei 11.101/2005</small>
+    </a>
+    <nav><a href="./">← Voltar à página inicial</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Assembleia Geral de Credores</div>
+    <h1>Assembleia de credores</h1>
+    <p>Nesta página são publicados a convocação, a pauta, o credenciamento, o resultado, a ata e a gravação das assembleias de credores da falência de Xinguleder Couros Ltda. (Processo nº 3015102-95.2006.8.13.0702). As assembleias serão realizadas em formato virtual, por videoconferência, quando assim autorizado pelo Juízo.</p>
+  </div>
+
+  <div class="status" id="status"></div>
+
+  <section id="como">
+    <h2>Como participar</h2>
+    <ol class="steps">
+      <li><div><strong>Acompanhe a convocação</strong>A assembleia é convocada pelo Juízo por edital publicado com pelo menos 15 dias de antecedência, com data, horário, forma de acesso e ordem do dia (art. 36). O edital também será publicado nesta página.</div></li>
+      <li><div><strong>Faça o credenciamento</strong>Preencha o formulário desta página e anexe os documentos. Quem participar por procurador deve entregar a procuração até <strong>24 horas antes</strong> da assembleia (art. 37, §4º). Sindicatos que representem trabalhadores devem apresentar a relação dos associados até <strong>10 dias antes</strong> (art. 37, §6º).</div></li>
+      <li><div><strong>Receba o link individual</strong>Após a conferência dos documentos, a Administração Judicial envia ao e-mail informado o link da sala virtual e o horário de abertura do credenciamento no dia.</div></li>
+      <li><div><strong>Entre na sala com antecedência</strong>A presença é registrada na entrada e compõe a lista de presença. Use câmera e microfone: a identificação e o voto são feitos de viva voz, por chamada nominal.</div></li>
+      <li><div><strong>Vote em cada item da pauta</strong>O Presidente chama cada credor pelo nome; o credor ou o procurador declara "sim", "não" ou "abstenção". O placar é exibido na tela durante a votação.</div></li>
+      <li><div><strong>Consulte o resultado</strong>A ata, a lista de presença e a gravação integral são juntadas ao processo em até 48 horas e publicadas nesta página.</div></li>
+    </ol>
+  </section>
+
+  <section id="voto">
+    <h2>Quem vota e como o voto é contado</h2>
+    <p>Votam os credores que constam do Quadro-Geral de Credores (art. 39). O voto de cada credor tem peso <strong>proporcional ao valor do seu crédito</strong> (art. 38), considerado o valor na data da decretação da falência (02/12/2013).</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Classe de voto (art. 41)</th><th>Quem integra</th></tr></thead>
+      <tbody>
+        <tr><td>I</td><td>Créditos trabalhistas e decorrentes de acidente de trabalho, pelo valor total do crédito</td></tr>
+        <tr><td>II</td><td>Créditos com garantia real, até o valor do bem gravado; o saldo vota na classe III</td></tr>
+        <tr><td>III</td><td>Créditos quirografários, com privilégio especial ou geral e subordinados</td></tr>
+        <tr><td>IV</td><td>Créditos de microempresas e empresas de pequeno porte</td></tr>
+      </tbody>
+    </table></div>
+    <p class="hint">Créditos tributários não integram as classes de voto. Sócios da falida e sociedades a ela ligadas podem participar, mas não votam nem contam para o quórum (art. 43).</p>
+    <div class="tbl" style="margin-top:14px"><table>
+      <thead><tr><th>Etapa ou matéria</th><th>Quórum</th></tr></thead>
+      <tbody>
+        <tr><td>Instalação em 1ª convocação</td><td>Credores titulares de mais da metade dos créditos de cada classe</td></tr>
+        <tr><td>Instalação em 2ª convocação</td><td>Qualquer número de credores</td></tr>
+        <tr><td>Deliberações em geral</td><td>Mais da metade do valor dos créditos presentes (art. 42)</td></tr>
+        <tr><td>Outras modalidades de venda dos bens (art. 145)</td><td>2/3 do valor dos créditos presentes (art. 46)</td></tr>
+        <tr><td>Eleição do Comitê de Credores</td><td>Cada classe escolhe o seu representante; votam só os credores da classe (art. 44)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="example"><strong>Exemplo.</strong> Se estiverem presentes credores que somam R$ 10.000.000,00 e um credor com R$ 3.000.000,00 votar "sim", o seu voto equivale a 30% dos créditos presentes. Uma matéria comum é aprovada com votos favoráveis acima de R$ 5.000.000,00.</div>
+  </section>
+
+  <section id="credenciamento">
+    <h2>Credenciamento</h2>
+    <div id="cred-closed" class="closed">O credenciamento será aberto quando houver assembleia convocada. A data limite constará do edital e desta página.</div>
+    <form id="form" hidden action="https://formsubmit.co/manifestacoes@falenciaxinguleder.com.br" method="POST" enctype="multipart/form-data" novalidate>
+      <input type="hidden" name="_subject" id="f_subject" value="Credenciamento AGC - Massa Falida Xinguleder">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" id="f_next" value="https://falenciaxinguleder.com.br/manifestacao-enviada.html">
+      <input type="hidden" name="_autoresponse" id="f_auto" value="">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="Protocolo" id="f_protocolo" value="">
+      <input type="hidden" name="Data e hora do envio" id="f_datahora" value="">
+      <input type="hidden" name="Assembleia" id="f_agc" value="">
+
+      <fieldset>
+        <legend>1. Credor</legend>
+        <div class="field"><label for="nome">Nome completo ou razão social do credor <span class="req">*</span></label><input type="text" id="nome" name="Credor" required></div>
+        <div class="row">
+          <div class="field"><label for="doc">CPF ou CNPJ do credor <span class="req">*</span></label><input type="text" id="doc" name="CPF/CNPJ do credor" inputmode="numeric" required></div>
+          <div class="field"><label for="nqgc">Nº do credor no QGC (se souber)</label><input type="text" id="nqgc" name="Nº no QGC" inputmode="numeric"><div class="hint">Consulte o <a href="apendice-I-qgc-consolidado.pdf" target="_blank" rel="noopener">Apêndice I do QGC</a>.</div></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Quem vai participar</legend>
+        <div class="field"><label for="forma">Forma de participação <span class="req">*</span></label>
+          <select id="forma" name="Forma de participação" required>
+            <option value="">Selecione…</option>
+            <option>O próprio credor (pessoa física)</option>
+            <option>Representante legal da empresa credora</option>
+            <option>Procurador (advogado ou mandatário)</option>
+            <option>Sindicato (representação de trabalhadores)</option>
+          </select></div>
+        <div class="row">
+          <div class="field"><label for="part">Nome de quem vai participar <span class="req">*</span></label><input type="text" id="part" name="Participante" required></div>
+          <div class="field"><label for="partdoc">CPF de quem vai participar <span class="req">*</span></label><input type="text" id="partdoc" name="CPF do participante" inputmode="numeric" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="oab">OAB (se advogado)</label><input type="text" id="oab" name="OAB"></div>
+          <div class="field"><label for="tel">Telefone com WhatsApp <span class="req">*</span></label><input type="tel" id="tel" name="Telefone" required><div class="hint">Usado pelo suporte no dia da assembleia.</div></div>
+        </div>
+        <div class="field"><label for="email">E-mail para receber o link da sala <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+        <div class="field"><label for="outros">Outros credores que a mesma pessoa representa</label><textarea id="outros" name="Outros credores representados" style="min-height:80px" placeholder="Nome e CPF/CNPJ de cada credor, um por linha. Anexe a procuração de cada um."></textarea><div class="hint">O procurador vota separadamente por cada credor representado.</div></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Documentos</legend>
+        <div class="files">
+          <div class="filebox"><label for="a1">Documento de identidade com foto de quem vai participar <span class="req">*</span></label><input type="file" id="a1" name="Documento de identidade" accept=".pdf,.jpg,.jpeg,.png" required></div>
+          <div class="filebox"><label for="a2">Procuração, contrato social ou ato que comprove os poderes de representação</label><input type="file" id="a2" name="Procuração ou ato constitutivo" accept=".pdf,.jpg,.jpeg,.png"></div>
+          <div class="filebox"><label for="a3">Outros documentos (relação de associados do sindicato, demais procurações)</label><input type="file" id="a3" name="Outros documentos" accept=".pdf,.jpg,.jpeg,.png"></div>
+        </div>
+        <div class="hint">PDF, JPG ou PNG, até <strong>10 MB somados</strong>. A procuração é obrigatória para procuradores e representantes de empresa.</div>
+        <div id="filestatus" aria-live="polite"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Declarações</legend>
+        <div class="privacy"><strong>Privacidade (LGPD).</strong> Os dados e documentos serão usados exclusivamente pelo Administrador Judicial para credenciamento, identificação e registro de presença e votos na assembleia, e poderão integrar a ata e a lista de presença juntadas aos autos (Lei 13.709/2018, art. 7º, II e VI). A assembleia é gravada e a gravação é juntada aos autos e publicada nesta página.</div>
+        <label class="check"><input type="checkbox" id="c1" name="Declaração de veracidade" value="Sim" required> <span>Declaro que as informações são verdadeiras e que tenho poderes para representar o credor indicado. <span class="req">*</span></span></label>
+        <label class="check"><input type="checkbox" id="c2" name="Ciência sobre gravação e dados" value="Sim" required> <span>Estou ciente da gravação e da publicação da assembleia e do uso dos meus dados descrito acima. <span class="req">*</span></span></label>
+      </fieldset>
+
+      <button type="submit" id="send">Enviar credenciamento</button>
+      <p class="hint" style="margin-top:12px">Após clicar em enviar, pode ser exibida uma verificação de segurança ("não sou um robô"). Conclua-a para finalizar o envio.</p>
+    </form>
+  </section>
+
+  <section id="requisitos">
+    <h2>Requisitos para participar</h2>
+    <ul>
+      <li>Computador, tablet ou celular com câmera, microfone e internet estável.</li>
+      <li>Documento de identidade em mãos para conferência na entrada.</li>
+      <li>Quem só quiser assistir, sem votar, pode acompanhar a transmissão pública, quando houver, sem credenciamento.</li>
+      <li>Em caso de dificuldade de acesso no dia, use o telefone de suporte informado no e-mail de credenciamento ou (34) 99132-8308.</li>
+    </ul>
+  </section>
+
+  <section id="duvidas">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Sou obrigado a participar?</summary><p>Não. A participação é facultativa. As decisões aprovadas obrigam todos os credores, inclusive os ausentes.</p></details>
+    <details><summary>Meu crédito está em discussão. Posso votar?</summary><p>Vota pelo valor que consta do Quadro-Geral de Credores na data da assembleia. Decisões posteriores sobre o valor não invalidam as deliberações já tomadas (art. 39, §2º).</p></details>
+    <details><summary>Posso mandar um representante?</summary><p>Sim. Basta credenciar o procurador e anexar a procuração até 24 horas antes da assembleia. Um mesmo procurador pode representar vários credores e votará separadamente por cada um.</p></details>
+    <details><summary>O que acontece se cair a minha conexão?</summary><p>Volte a entrar pelo mesmo link. A presença já registrada é mantida. Se a queda ocorrer durante a chamada do seu nome, informe o suporte; o Presidente poderá repetir a chamada antes de encerrar a votação do item.</p></details>
+    <details><summary>Como sei o que foi decidido?</summary><p>O resultado de cada item é anunciado ao final da votação. A ata, a lista de presença e a gravação são publicadas nesta página e juntadas ao processo.</p></details>
+  </section>
+
+  <section id="docs-agc" class="docs" hidden>
+    <h2>Documentos da assembleia</h2>
+    <div class="tbl"><table><thead><tr><th>Documento</th><th>Data</th><th>Arquivo</th></tr></thead><tbody id="docs-body"></tbody></table></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Página mantida pelo Administrador Judicial nos termos do art. 22, I, "k", da Lei 11.101/2005. As informações aqui publicadas não substituem os autos.</p>
+  </div>
+</footer>
+
+<script>
+/* ============ CONFIGURAÇÃO DA ASSEMBLEIA ============
+   status: "sem_convocacao" | "convocada" | "realizada"
+   Datas em AAAA-MM-DD; horários em HH:MM. Documentos: arquivos PDF publicados na raiz do site. */
+var AGC = {
+  status: "sem_convocacao",
+  titulo: "",
+  conv1: { data: "", hora: "" },
+  conv2: { data: "", hora: "" },
+  plataforma: "",
+  credenciamentoAte: "",
+  transmissao: "",
+  pauta: [],
+  documentos: []   /* ex.: { nome: "Edital de convocação", data: "2026-11-10", arquivo: "agc-edital.pdf" } */
+};
+/* ==================================================== */
+
+(function(){
+  function br(d){if(!d)return'';var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var st=document.getElementById('status'), h='';
+  if(AGC.status==='sem_convocacao'){
+    h='<span class="tag">Sem assembleia convocada</span><div>Não há assembleia de credores convocada neste momento. Quando houver, o edital, a pauta e o formulário de credenciamento serão publicados aqui e no <a href="./#avisos">quadro de avisos</a>.</div>';
+  } else {
+    h='<span class="tag on">'+(AGC.status==='convocada'?'Assembleia convocada':'Assembleia realizada')+'</span><h2 style="margin:0">'+esc(AGC.titulo||'Assembleia Geral de Credores')+'</h2><dl>'+
+      (AGC.conv1.data?'<dt>1ª convocação</dt><dd>'+br(AGC.conv1.data)+' às '+esc(AGC.conv1.hora)+'</dd>':'')+
+      (AGC.conv2.data?'<dt>2ª convocação</dt><dd>'+br(AGC.conv2.data)+' às '+esc(AGC.conv2.hora)+'</dd>':'')+
+      (AGC.plataforma?'<dt>Formato</dt><dd>'+esc(AGC.plataforma)+'</dd>':'')+
+      (AGC.credenciamentoAte?'<dt>Credenciamento até</dt><dd>'+esc(AGC.credenciamentoAte)+'</dd>':'')+
+      (AGC.transmissao?'<dt>Transmissão pública</dt><dd><a href="'+esc(AGC.transmissao)+'" target="_blank" rel="noopener">assistir</a></dd>':'')+'</dl>'+
+      (AGC.pauta.length?'<div><strong>Ordem do dia</strong><ol type="a" style="margin:.4em 0 0">'+AGC.pauta.map(function(p){return'<li>'+esc(p)+'</li>'}).join('')+'</ol></div>':'');
+  }
+  st.innerHTML=h;
+  if(AGC.status==='convocada'){document.getElementById('form').hidden=false;document.getElementById('cred-closed').hidden=true}
+  else if(AGC.status==='realizada'){document.getElementById('cred-closed').textContent='Credenciamento encerrado.'}
+  if(AGC.documentos.length){document.getElementById('docs-agc').hidden=false;
+    document.getElementById('docs-body').innerHTML=AGC.documentos.map(function(d){return'<tr><td>'+esc(d.nome)+'</td><td>'+br(d.data)+'</td><td><a href="'+esc(d.arquivo)+'" target="_blank" rel="noopener" data-goatcounter-click="download/'+esc(d.arquivo)+'">'+(/\.pdf$/i.test(d.arquivo)?'PDF':'Abrir')+'</a></td></tr>'}).join('')}
+
+  var form=document.getElementById('form'), status=document.getElementById('filestatus'), MAX=10*1024*1024;
+  var files=[].slice.call(form.querySelectorAll('input[type=file]'));
+  function total(){return files.reduce(function(s,i){return s+(i.files[0]?i.files[0].size:0)},0)}
+  function check(){var t=total();if(!t){status.textContent='';status.className='';return true}var ok=t<=MAX;
+    status.textContent='Total anexado: '+(t/1048576).toFixed(1).replace('.',',')+' MB'+(ok?'':' — acima do limite de 10 MB. Envie os demais documentos em novo credenciamento, informando o protocolo anterior.');status.className=ok?'':'bad';return ok}
+  files.forEach(function(i){i.addEventListener('change',check)});
+  function pad(n){return String(n).padStart(2,'0')}
+  form.addEventListener('submit',function(e){
+    if(!form.checkValidity()){e.preventDefault();form.reportValidity();return}
+    if(!check()){e.preventDefault();status.scrollIntoView({block:'center'});return}
+    var d=new Date(),c='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',r='';for(var k=0;k<4;k++)r+=c[Math.floor(Math.random()*c.length)];
+    var p='AGC-'+d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'-'+pad(d.getHours())+pad(d.getMinutes())+'-'+r;
+    var nome=document.getElementById('nome').value.trim();
+    document.getElementById('f_protocolo').value=p;
+    document.getElementById('f_datahora').value=d.toLocaleString('pt-BR');
+    document.getElementById('f_agc').value=(AGC.titulo||'AGC')+' — 1ª conv. '+br(AGC.conv1.data);
+    document.getElementById('f_subject').value='Credenciamento AGC '+p+' – '+nome;
+    document.getElementById('f_next').value='https://falenciaxinguleder.com.br/manifestacao-enviada.html?p='+encodeURIComponent(p);
+    document.getElementById('f_auto').value='Recebemos o seu pedido de credenciamento para a assembleia de credores da falência de Xinguleder Couros Ltda. (Processo nº 3015102-95.2006.8.13.0702). Protocolo: '+p+'. Após a conferência dos documentos, o link da sala virtual será enviado a este e-mail. Este é um e-mail automático; não é necessário respondê-lo.';
+    var b=document.getElementById('send');b.disabled=true;b.textContent='Enviando…';
+  });
+})();
+</script>
+<script>window.goatcounter={path:function(){return location.pathname||"/"}}</script>
+<script data-goatcounter="https://falenciaxinguleder.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

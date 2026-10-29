@@ -35,13 +35,13 @@
       <p style="margin-bottom:0">Número de protocolo:</p>
       <div class="proto" id="proto"></div>
     </div>
-    <p>Guarde este número para eventual contato. Uma confirmação também foi enviada para o e-mail informado no formulário. A manifestação será analisada pela Administração Judicial.</p>
+    <p id="msg">Guarde este número para eventual contato. Uma confirmação também foi enviada para o e-mail informado no formulário. A manifestação será analisada pela Administração Judicial.</p>
     <p>Se não receber a confirmação em alguns minutos, verifique a caixa de spam ou escreva para <a href="mailto:manifestacoes@falenciaxinguleder.com.br">manifestacoes@falenciaxinguleder.com.br</a> informando o protocolo.</p>
     <a class="btn" href="./">Voltar à página inicial</a>
   </div>
 </main>
 <script>
-  try{var p=new URLSearchParams(location.search).get('p');if(p&&/^[A-Z0-9-]{8,40}$/.test(p)){document.getElementById('proto').textContent=p;document.getElementById('pbox').hidden=false}}catch(e){}
+  try{var p=new URLSearchParams(location.search).get('p');if(p&&/^[A-Z0-9-]{8,40}$/.test(p)){document.getElementById('proto').textContent=p;document.getElementById('pbox').hidden=false;if(/^AGC-/.test(p)){document.title='Credenciamento recebido · Massa Falida Xinguleder';document.querySelector('.ok').textContent='✓ Credenciamento enviado';document.querySelector('h1').textContent='Recebemos o seu credenciamento';document.getElementById('msg').textContent='Guarde este número. Após a conferência dos documentos, o link da sala virtual será enviado ao e-mail informado no formulário.'}}}catch(e){}
 </script>
 <script>window.goatcounter={path:function(){return location.pathname||"/"}}</script>
 <script data-goatcounter="https://falenciaxinguleder.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
