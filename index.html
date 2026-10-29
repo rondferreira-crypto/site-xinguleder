@@ -66,6 +66,18 @@
   .notice{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:16px 18px;margin-top:14px}
   .notice time{font-size:.85rem;color:var(--muted);white-space:nowrap;min-width:92px}
   .empty{color:var(--muted);font-style:italic;margin-top:14px}
+  .alerta{display:flex;gap:14px;align-items:flex-start;margin-top:18px;max-width:900px;background:var(--pend);color:var(--pend-ink);border:1px solid var(--pend-ink);border-radius:10px;padding:14px 18px;font-size:.95rem}
+  .alerta strong{display:block;font-size:1rem;margin-bottom:2px}
+  .alerta p{margin:0;text-align:justify;hyphens:auto;color:inherit;max-width:none;width:auto;min-width:0}
+  .alerta a{color:inherit}
+  .alerta .ico{flex:none;width:28px;height:28px;border-radius:50%;border:2px solid currentColor;display:grid;place-items:center;font-weight:700}
+  .hist{list-style:none;margin:18px 0 0;padding:0 0 0 22px;border-left:2px solid var(--line);display:grid;gap:18px}
+  .hist li{position:relative}
+  .hist li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent)}
+  .hist time{display:block;font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .hist strong{display:block}
+  .hist p{margin:.2em 0 0;text-align:justify;hyphens:auto;max-width:820px}
+  h3.sub{font-family:"Source Serif 4",Georgia,serif;font-size:1.2rem;margin:34px 0 0}
 
   .cta{display:inline-block;background:var(--brand);color:var(--brand-ink)!important;text-decoration:none;font-weight:600;border-radius:8px;padding:12px 20px}
   .cta:hover{opacity:.92}
@@ -139,7 +151,7 @@
     </div>
     <nav>
       <a href="#processo">Processo</a>
-      <a href="#avisos">Avisos</a>
+      <a href="#avisos">Notícias</a>
       <a href="#credores">Credores</a>
       <a href="manifestacao.html">Manifestação</a>
       <a href="assembleia.html">Assembleia</a>
@@ -160,6 +172,8 @@
       <p>Este é o canal oficial de informações do processo de falência, mantido pelo Administrador Judicial em cumprimento ao art. 22, I, "k", da Lei 11.101/2005. Aqui credores e interessados encontram editais, prazos, relatórios e as peças principais do processo.</p>
       </div>
       <div class="status"><span class="dot"></span> Situação atual: Quadro-Geral de Credores consolidado apresentado nos autos</div>
+      <div class="alerta" role="note" id="golpes"><span class="ico" aria-hidden="true">!</span><div><strong>Cuidado com golpes</strong>
+        <p>A Administração Judicial <b>não cobra taxas</b> e não pede depósito, PIX ou qualquer pagamento para informar, habilitar ou liberar créditos. Pagamentos aos credores só ocorrem por rateio autorizado pelo Juízo e anunciado neste site. Desconfie de contatos por telefone, WhatsApp, e-mail ou outros sites que ofereçam "recuperar" créditos da falência. Em caso de dúvida, confirme pelos canais oficiais da seção <a href="#contato">Contato</a>.</p></div></div>
     </div>
   </div>
 
@@ -178,8 +192,13 @@
 
   <section id="avisos">
     <div class="wrap">
-      <h2>Avisos e editais</h2>
+      <h2>Notícias e andamentos</h2>
       <p class="lead">Publicações mais recentes, da mais nova para a mais antiga.</p>
+      <div class="notice">
+        <time>29/10/2026</time>
+        <div><strong>Página da assembleia de credores e alerta contra golpes</strong><br>
+        Foi criada a página da <a href="assembleia.html">assembleia de credores</a>, que reunirá convocação, credenciamento, resultado, ata e gravação. Não há assembleia convocada no momento. A Administração Judicial reforça que <a href="#golpes">não cobra taxas</a> para informar ou liberar créditos.</div>
+      </div>
       <div class="notice">
         <time>21/10/2026</time>
         <div><strong>Juntada de relatórios da Administração Judicial</strong><br>
@@ -195,7 +214,20 @@
         <div><strong>Lançamento do site oficial da Massa Falida</strong><br>
         Este endereço passa a concentrar as informações do processo. Novos editais e relatórios serão publicados nesta seção.</div>
       </div>
-      <p class="empty">Editais, relatórios e demais publicações do processo serão incluídos nesta seção.</p>
+
+      <h3 class="sub">Histórico do processo</h3>
+      <ol class="hist">
+        <li><time>21/10/2026</time><strong>Quadro-Geral de Credores consolidado e relatórios da Administração Judicial</strong>
+          <p>Juntados aos autos o QGC consolidado (299 registros, R$ 465,1 milhões na data da quebra), o relatório de arrecadação de ativos e o relatório dos processos judiciais da massa falida. <a href="#qgc">Resumo do QGC</a> · <a href="#documentos">documentos</a>.</p></li>
+        <li><time>11/02/2019</time><strong>Compromisso do Administrador Judicial</strong>
+          <p>Rondinélio Ferreira Rodrigues assina o termo de compromisso e assume a administração judicial da massa falida. <a data-goatcounter-click="download/termo-compromisso-aj.pdf" data-goatcounter-title="Download: termo-compromisso-aj.pdf" href="termo-compromisso-aj.pdf" target="_blank" rel="noopener">Termo de compromisso (PDF)</a>.</p></li>
+        <li><time>18/04/2018</time><strong>Trânsito em julgado da sentença de falência</strong>
+          <p>Após o julgamento do REsp 1.589.759 pelo Superior Tribunal de Justiça, certifica-se o trânsito em julgado da decretação da falência. <a data-goatcounter-click="download/transito-julgado-falencia.pdf" data-goatcounter-title="Download: transito-julgado-falencia.pdf" href="transito-julgado-falencia.pdf" target="_blank" rel="noopener">Decisão e certidão (PDF)</a>.</p></li>
+        <li><time>20/02/2014</time><strong>Audiência de nomeação da Administração Judicial</strong>
+          <p>Realizada audiência no Juízo da 6ª Vara Cível de Uberlândia para nomeação do Administrador Judicial. <a data-goatcounter-click="download/termo-audiencia-nomeacao-aj.pdf" data-goatcounter-title="Download: termo-audiencia-nomeacao-aj.pdf" href="termo-audiencia-nomeacao-aj.pdf" target="_blank" rel="noopener">Termo de audiência (PDF)</a>.</p></li>
+        <li><time>02/12/2013</time><strong>Decretação da falência</strong>
+          <p>O Juízo da 6ª Vara Cível da Comarca de Uberlândia/MG decreta a falência de Xinguleder Couros Ltda. Esta é a data-base para o cálculo dos créditos (art. 9º, II, da Lei 11.101/2005). <a data-goatcounter-click="download/sentenca-decretacao-falencia.pdf" data-goatcounter-title="Download: sentenca-decretacao-falencia.pdf" href="sentenca-decretacao-falencia.pdf" target="_blank" rel="noopener">Sentença (PDF)</a>.</p></li>
+      </ol>
     </div>
   </section>
 
@@ -319,6 +351,7 @@
   <div class="wrap">
     <p>Página mantida pelo Administrador Judicial nos termos do art. 22, I, "k", da Lei 11.101/2005.</p>
     <p>As informações aqui publicadas não substituem os autos. Em caso de divergência, prevalece o conteúdo do processo judicial.</p>
+    <p>A Administração Judicial não cobra taxas nem pede pagamentos para informar ou liberar créditos. Desconfie de contatos que ofereçam esse serviço.</p>
     <p>Este site mede acessos de forma anônima (GoatCounter), sem cookies e sem coleta de dados pessoais.</p>
   </div>
 </footer>
